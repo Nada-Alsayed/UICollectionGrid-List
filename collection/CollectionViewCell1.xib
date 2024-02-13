@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell1" customModule="collection" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon.stars.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="53U-zx-lK5">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="69"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nada Hamed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONL-kD-NOm">
+                        <rect key="frame" x="0.0" y="71" width="250" height="29"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.5562867574" green="0.53592518899999997" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="53U-zx-lK5" secondAttribute="trailing" id="8yk-nx-cdg"/>
+                <constraint firstItem="53U-zx-lK5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Csb-9x-Rq7"/>
+                <constraint firstAttribute="bottom" secondItem="ONL-kD-NOm" secondAttribute="bottom" id="MKA-1d-Kk7"/>
+                <constraint firstItem="ONL-kD-NOm" firstAttribute="top" secondItem="53U-zx-lK5" secondAttribute="bottom" constant="1" id="X4C-Cj-6hI"/>
+                <constraint firstItem="53U-zx-lK5" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.7" id="c2H-il-z2i"/>
+                <constraint firstItem="ONL-kD-NOm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cG3-6J-l29"/>
+                <constraint firstAttribute="trailing" secondItem="ONL-kD-NOm" secondAttribute="trailing" id="vQP-Mr-azR"/>
+                <constraint firstItem="53U-zx-lK5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wqf-Yf-2Ae"/>
+            </constraints>
+            <connections>
+                <outlet property="myImg" destination="53U-zx-lK5" id="0Cr-LF-y2i"/>
+            </connections>
+            <point key="canvasLocation" x="-3.0534351145038165" y="-11.267605633802818"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="moon.stars.fill" catalog="system" width="125" height="128"/>
+    </resources>
+</document>
